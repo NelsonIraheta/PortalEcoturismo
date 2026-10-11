@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservaciones | Honduras Ecoturismo</title>
+  <link rel="stylesheet" href="css/comun.css">
+  <link rel="stylesheet" href="css/reservaciones.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1 class="titulo">Reservaciones y Solicitud de Tours</h1>
+      <p class="leyenda">Completa el formulario y organizamos tu recorrido</p>
+    </div>
+  </header>
+
+  <nav class="menu-navegacion">
+    <a href="index.html" class="nav-tab">Inicio</a>
+    <a href="destinos.html" class="nav-tab">Destinos y Rutas</a>
+    <a href="cultura.html" class="nav-tab">Cultura y Gastronomía</a>
+    <a href="reservaciones.html" class="nav-tab activo">Reservaciones</a>
+    <a href="contacto.html" class="nav-tab">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Formulario de solicitud</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre completo del viajero titular</label>
+        <input type="text" class="campo" id="nombre" name="nombre" minlength="5" maxlength="80" required>
+
+        <label for="telefono">Número telefónico</label>
+        <input type="tel" class="campo" id="telefono" name="telefono" pattern="[0-9+\- ]{8,15}" placeholder="Ej: 9999-9999" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" class="campo" id="correo" name="correo" required>
+
+        <label for="destino">Circuito o destino deseado</label>
+        <select id="destino" name="destino" required>
+          <option value="">Seleccione una opción</option>
+          <option>Copán Ruinas (Ruta Maya)</option>
+          <option>Gracias, Lempira (Ruta Lenca)</option>
+          <option>Parque Nacional Celaque</option>
+          <option>Parque Nacional Pico Bonito</option>
+          <option>Roatán, Islas de la Bahía</option>
+          <option>Tela y costa garífuna</option>
+        </select>
+
+        <label for="inicio">Fecha de inicio</label>
+        <input type="date" class="campo" id="inicio" name="inicio" min="2026-10-10" required>
+
+        <label for="retorno">Fecha de retorno</label>
+        <input type="date" class="campo" id="retorno" name="retorno" min="2026-10-10" required>
+
+        <div class="visitantes">
+          <div class="tipo-visitante">
+            <label for="adultos">Adultos</label>
+            <input type="number" class="campo" id="adultos" name="adultos" min="1" max="20" value="1" required>
+          </div>
+          <div class="tipo-visitante">
+            <label for="menores">Menores</label>
+            <input type="number" class="campo" id="menores" name="menores" min="0" max="20" value="0" required>
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Tipo de hospedaje</legend>
+          <label><input type="radio" name="hospedaje" value="cabana" required> Cabaña ecológica</label>
+          <label><input type="radio" name="hospedaje" value="hotel"> Hotel colonial</label>
+          <label><input type="radio" name="hospedaje" value="campamento"> Campamento de montaña</label>
+        </fieldset>
+
+        <label for="necesidades">Necesidades de accesibilidad o guía bilingüe</label>
+        <textarea class="campo" id="necesidades" name="necesidades" rows="3" maxlength="300"></textarea>
+
+        <p class="aceptar">
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto" class="aceptar-label">Acepto los compromisos de conservación ecológica y protección del patrimonio.</label>
+        </p>
+
+        <button type="submit" class="boton">Enviar solicitud</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Honduras Ecoturismo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
