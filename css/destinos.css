@@ -1,0 +1,21 @@
+.ruta{
+  background: var(--celeste-claro);
+  padding: 15px;
+  border-left: 6px solid var(--dorado);
+}
+
+.destino{
+  background: var(--blanco);
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid var(--celeste);
+}
+
+.lista{
+  margin: 8px 0 8px 20px;
+}
+
+.nota{
+  font-size: 0.9rem;
+  font-style: italic;
+}

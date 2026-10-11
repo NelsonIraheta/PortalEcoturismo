@@ -1,0 +1,18 @@
+.morazan{
+  border-left: 6px solid var(--azul);
+  padding-left: 15px;
+}
+
+.categoria{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.articulo{
+  flex: 1;
+  min-width: 220px;
+  border: 1px solid var(--celeste);
+  padding: 10px;
+  background: var(--celeste-claro);
+}

@@ -1,0 +1,17 @@
+main{
+  max-width: 700px;
+}
+
+.visitantes{
+  display: flex;
+  gap: 15px;
+}
+
+.tipo-visitante{
+  flex: 1;
+}
+
+.aceptar-label{
+  display: inline;
+  font-weight: normal;
+}
