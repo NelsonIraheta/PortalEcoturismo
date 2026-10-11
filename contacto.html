@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Honduras Ecoturismo</title>
+  <link rel="stylesheet" href="css/comun.css">
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1 class="titulo">Contacto y Asistencia al Turista</h1>
+      <p class="leyenda">Estamos para ayudarte durante tu visita</p>
+    </div>
+  </header>
+
+  <nav class="menu-navegacion">
+    <a href="index.html" class="nav-tab">Inicio</a>
+    <a href="destinos.html" class="nav-tab">Destinos y Rutas</a>
+    <a href="cultura.html" class="nav-tab">Cultura y Gastronomía</a>
+    <a href="reservaciones.html" class="nav-tab">Reservaciones</a>
+    <a href="contacto.html" class="nav-tab activo">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Oficinas de información turística</h2>
+      <div class="oficinas">
+        <article class="carta-oficina">
+          <h3>Tegucigalpa</h3>
+          <p>Dirección: [colocar dirección]</p>
+          <p>Horario: lunes a viernes, 8:00 a.m. a 4:00 p.m.</p>
+        </article>
+        <article class="carta-oficina">
+          <h3>San Pedro Sula</h3>
+          <p>Dirección: [colocar dirección]</p>
+          <p>Horario: lunes a viernes, 8:00 a.m. a 4:00 p.m.</p>
+        </article>
+        <article class="carta-oficina">
+          <h3>La Ceiba</h3>
+          <p>Dirección: [colocar dirección]</p>
+          <p>Horario: lunes a sábado, 8:00 a.m. a 4:00 p.m.</p>
+        </article>
+      </div>
+      <img src="img/mapa-oficinas.jpg" alt="Imagen: mapa esquemático de Honduras con la ubicación de las oficinas">
+    </section>
+
+    <section class="emergencia">
+      <h2>Emergencias y asistencia</h2>
+      <p>Emergencias: 911</p>
+      <p>Asistencia vial: [colocar teléfono]</p>
+      <p>Asistencia turística: [colocar teléfono]</p>
+      <p>Correo oficial: contacto@honduras-ecoturismo.example</p>
+    </section>
+
+    <section>
+      <h2>Canales digitales</h2>
+      <ul>
+        <li><a href="#">Facebook institucional</a></li>
+        <li><a href="#">Instagram institucional</a></li>
+        <li><a href="#">YouTube institucional</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Consultas y comentarios</h2>
+      <form action="#" method="post">
+        <label for="c-nombre">Nombre</label>
+        <input type="text" class="campo" id="c-nombre" name="nombre" maxlength="80" required>
+
+        <label for="c-correo">Correo electrónico</label>
+        <input type="email" class="campo" id="c-correo" name="correo" required>
+
+        <label for="c-tipo">Tipo de solicitud</label>
+        <select id="c-tipo" name="tipo" required>
+          <option value="">Seleccione una opción</option>
+          <option>Consulta general</option>
+          <option>Comentario</option>
+          <option>Solicitud de asistencia</option>
+        </select>
+
+        <label for="c-mensaje">Mensaje</label>
+        <textarea class="campo" id="c-mensaje" name="mensaje" rows="4" minlength="10" maxlength="500" required></textarea>
+
+        <button type="submit" class="boton">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Honduras Ecoturismo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
